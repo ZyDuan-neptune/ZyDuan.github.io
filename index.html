@@ -1,0 +1,608 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+    <meta name=viewport content=“width=800”>
+    <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+    <style type="text/css">
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        a {
+            color: #1772d0;
+            text-decoration: none;
+        }
+
+        a:focus,
+        a:hover {
+            color: #f09228;
+            text-decoration: none;
+        }
+
+        body,
+        td,
+        th,
+        tr,
+        p,
+        a {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 14px
+        }
+
+        strong {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        heading {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 22px;
+        }
+
+        papertitle {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 700
+        }
+
+        name {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 32px;
+        }
+
+        .one {
+            width: 160px;
+            height: 160px;
+            position: relative;
+        }
+
+        .two {
+            width: 160px;
+            height: 160px;
+            position: absolute;
+            transition: opacity .2s ease-in-out;
+            -moz-transition: opacity .2s ease-in-out;
+            -webkit-transition: opacity .2s ease-in-out;
+        }
+
+        .fade {
+            transition: opacity .2s ease-in-out;
+            -moz-transition: opacity .2s ease-in-out;
+            -webkit-transition: opacity .2s ease-in-out;
+        }
+
+        span.highlight {
+            background-color: #ffffd0;
+        }
+    </style>
+    <link rel="icon" type="image/jpg" href="img/headshot.jpg">
+    <title>ZEYU DUAN</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet'
+          type='text/css'>
+
+</head>
+<body>
+<table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+        <td>
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                <tr>
+                    <td width="67%" valign="middle">
+                        <p align="center">
+                            <name>ZEYU DUAN</name>
+                        </p>
+                        <p>
+                            I'm a postgraduate student in <a href="https://mefaculty.tongji.edu.cn/index.php?classid=2746">School of Mechanical Engineering</a> at <a href="https://en.tongji.edu.cn/">Tongji University (TJU)</a> .
+                            In my research, I am exploring autonomous mobile robots, self-driving autonomous heavy equipment using in construction, and deep learning.
+                        </p>
+                        <p>
+                            I received my bachelor degree in mechanical engineering from <a href="https://en.tongji.edu.cn/">Tongji University (TJU)</a> with honors, where I have investigated robot localization and unmanned surface vehicle design.
+                        </p>
+                        <p align=center>
+                            <a href="mailto:ZyDuan0124@outlook.com">Email</a> &nbsp/&nbsp
+                            <a href="https://github.com/ZyDuan-neptune">Github</a> &nbsp/&nbsp
+                            <a href="https://www.linkedin.com/in/zeyu-duan-6085321a8/">Linkedin</a>
+                        </p>
+                    </td>
+                    <td width="33%">
+                        <a href="img/headshot.jpg">
+                            <img src="img/headshot.jpg" width="250px"></a>
+                    </td>
+                </tr>
+            </table>
+
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                <tr>
+                    <td width="100%" valign="middle">
+                        <heading>Education</heading>
+                    </td>
+                </tr>
+            </table>
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                <tr>
+                    <td width="10%">
+                        <div class="one">
+                            <div class="two"><img src='img/TJU.png' width="150"></div>
+                        </div>
+                    </td>
+                    <td valign="top" width="90%">
+                        <strong>Sept. 2019 - Jun. 2022 (Expected) </strong>
+                        <br>
+                        <strong>Postgraduate Student in Mechanical Engineering</strong>
+                        <br>
+                        Major Construction Technology and Equipment, Engineering Research Team
+                        <br>
+                        School of Mechanical Engineering, Tongji University
+                        <br>
+
+
+                       Advised by
+                        <a href="https://mefaculty.tongji.edu.cn/index.php?classid=2761&t=show&id=12">Prof. Guangjun Liu</a>
+                        <p></p>
+                        <p>I focus on navigation and mapping for autonomous mobile robots, self-driving autonomous heavy equipment using in construction.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="10%">
+                        <div class="one">
+                            <div class="two"><img src='img/TJU.png' width="150"></div>
+                        </div>
+                    </td>
+                    <td valign="top" width="90%">
+                        <strong>Sept. 2015 - Jun. 2019 </strong>
+                        <br>
+                        <strong>Bachelor of Engineering in Mechanical Engineering</strong>
+                        <br>
+                        Tongji University, Shanghai                     
+                    </td>
+                </tr>
+            </table>
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                <tr>
+                    <td width="100%" valign="middle">
+                        <heading>Research and Teaching Experience</heading>
+                    </td>
+                </tr>
+            </table>
+           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                <tr>
+                    <td width="10%">
+                        <div class="one">
+                            <div class="two"><img src='img/rgb-d.jpg' width="190"></div>
+                        </div>
+                    </td>
+                    <td valign="top" width="90%">
+                        <strong>Mar. 2020 - Present(Graduate Thesis) </strong>
+                        <br>
+                        <strong>Development & Application of Autonomous Painting Robot </strong>
+                        <br>
+                        School of Mechanical Engineering, Tongji University
+                        <br>
+                        Major Construction Technology and Equipment, Engineering Research Team
+                        <br>
+                        Cooperated with Shanghai Communications Construction Contracting Co., Ltd.
+                       <br>
+                        Project leader
+                        <br>
+                        Work with
+                        <a href="https://mefaculty.tongji.edu.cn/index.php?classid=2761&t=show&id=12">Prof. Guangjun Liu</a>
+                        <p></p>
+                       Aimed at a mobile platform of indoor painting robot with independent mapping path planning based on indoor three-dimensional modeling on account of the technology of synchronous positioning mapping of multi-sensor fusion(Lidar, Camera, IMU), so as to realize the automatic operation of indoor painting work.	        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td width="10%">
+                        <div class="one">
+                            <div class="two"><img src='img/mining.jpg' width="185"></div>
+                        </div>
+                    </td>
+                    <td valign="top" width="90%">
+                        <strong>Mar. 2019 - Jun. 2021 </strong>
+                        <br>
+                        <strong>Development of Automatic Mining System with Autonomous Perception</strong>
+                        <br>
+                        School of Mechanical Engineering, Tongji University
+                        <br>
+                        Major Construction Technology and Equipment, Engineering Research Team
+                        <br>
+                        Cooperated with China Construction Second Engineering Bureau LTD.
+                        <br>
+                        Work with
+                        <a href="https://mefaculty.tongji.edu.cn/index.php?classid=2761&t=show&id=12">Prof. Guangjun Liu</a>
+                        <p></p>
+                        <p>Aimed at realizing the synchronous positioning mapping technology based on multi-sensor fusion, building the outdoor excavator with autonomous sensing, so as to realize the automatic operation of outdoor ground work.
+                        <p>
+                        As the project leader, responsible for the development of the lidar vision perception system and the transformation of the electric control system of excavator.</p>
+                    </td>
+                </tr>
+               <tr>
+                    <td width="10%">
+                        <div class="one">
+                            <div class="two"><img src='img/AGV.jpg' width="185"></div>
+                        </div>
+                    </td>
+                    <td valign="top" width="90%">
+                        <strong>April. 2020 - Jan. 2021 </strong>
+                        <br>
+                        <strong>Design of factory intelligent Multi-AGVs control system</strong>
+                        <br>
+                        School of Mechanical Engineering, Tongji University
+                        <br>
+                        Major Construction Technology and Equipment, Engineering Research Team
+                        <br>
+                        Cooperated with Shanghai CHEER Electromechanical Techology CO., LTD.
+                        <br>
+                        Work with
+                        <a href="https://mefaculty.tongji.edu.cn/index.php?classid=2761&t=show&id=12">Prof. Guangjun Liu</a>
+                        <p></p>
+                        <p>This project is launched for AGV groups in a high-load factory environment.
+                        Controlled and reasonable automatic guidance lane planning can shorten the transportation time of materials and improve the production efficiency of the intelligent assembly workshop. 
+                        A step-by-step optimization method to improve the search efficiency of the ant colony algorithm and a simplified path method to avoid the tortuous path are proposed to reduce the common problems
+                        that are easy to fall into the local optimum and the search efficiency is low.</p>
+                    </td>
+                </tr>
+               <tr>
+                    <td width="10%">
+                        <div class="one">
+                            <div class="two"><img src='img/semantic.png' width="185"></div>
+                        </div>
+                    </td>
+                    <td valign="top" width="90%">
+                        <strong>Nov. 2020 - Present </strong>
+                        <br>
+                        <strong>Real-time 3D point cloud semantic segmentation in autonomous driving scenarios</strong>
+                        <br>
+                        School of Mechanical Engineering, Tongji University
+                        <br>
+                        Major Construction Technology and Equipment, Engineering Research Team
+                        <br>
+                        Cooperated with Shanghai CHEER Electromechanical Techology CO., LTD.
+                        <br>
+                        Work with
+                        <a href="https://mefaculty.tongji.edu.cn/index.php?classid=2761&t=show&id=12">Prof. Guangjun Liu</a>
+                        <p></p>
+                        <p>Incorporating transformer technology into deep neural networks, we proprose a new network structure for the semantic segmentation of 3D point cloud data for the understanding of large scenes such as autonomous driving. Compared with the existing methods, it has improved the accuracy and real-time performance.</p>
+                    </td>
+                </tr>
+
+
+
+
+
+                <tr>
+                    <td width="10%">
+                        <div class="one">
+                            <div class="two"><img src='img/robot.jpg' width="185"></div>
+                        </div>
+                    </td>
+                    <td valign="top" width="90%">
+                        <strong>Aug. 2020 - Jan. 2021 </strong>
+                        <br>
+                        <strong>Research on Intelligent Positioning Technology and Control Algorithm of Autonomous Fire-fighting Robot</strong>
+                        <br>
+                        School of Mechanical Engineering, Tongji University
+                        <br>
+                        Major Construction Technology and Equipment, Engineering Research Team
+                        <br>
+                        Work with
+                        <a href="https://mefaculty.tongji.edu.cn/index.php?classid=2761&t=show&id=12">Prof. Guangjun Liu</a>
+                        <p></p>
+                        <p>In this project, a crawler-type all-terrain autonomous firefighting robot was designed and developed to perform mapping environment recognition and intelligent positioning technology research in a complex fire environment. A flame recognition algorithm based on the firefly algorithm-wavelet support vector machine and a fuzzy estimation algorithm for the pose of a mobile robot in a complex environment are proposed, and an actual fire field experiment is carried out.</p>
+                    </td>
+                </tr>
+               <tr>
+                    <td width="10%">
+                        <div class="one">
+                            <div class="two"><img src='img/cheer1.jpg' width="140"></div>
+                        </div>
+                    </td>
+                    <td valign="top" width="90%">
+                        <strong>June. 2020 - May. 2021 </strong>
+                        <br>
+                        <strong>Development of Intelligent Vision Production Line System based on Semi-supervised Learning</strong>
+                        <br>
+                        School of Mechanical Engineering, Tongji University 
+                        <br>
+                        Major Construction Technology and Equipment, Engineering Research Team
+                        <br>
+                      Work with
+                        <a href="https://mefaculty.tongji.edu.cn/index.php?classid=2761&t=show&id=12">Prof. Guangjun Liu</a>
+                        <p></p>
+                        <br>Aimed at designing an automatic copper pipe production line, an active learning research based on semi-supervised learning antagonistic generating network, and a batching screening system based on three-dimensional vision guidance.
+                        <p>
+                        <br>As the project leader, mainly responsible for the algorithm, including the proposal and experiment of semi-supervised algorithm, the experiment of visually guided robotic arm, semi-supervised Gan active learning algorithm, and also the robot trajectory planning technology based on visual images.
+                    </td>
+                </tr>
+               <tr>
+                    <td width="10%">
+                        <div class="one">
+                            <div class="two"><img src='img/TJU.png' width="145"></div>
+                        </div>
+                    </td>
+                    <td valign="top" width="90%">
+                        <br>
+                        <strong>Teaching Assistant, Tongji University, Shanghai</strong>
+                        <br>Mechanical System Innovation Course, Fall 2019
+                        <br>Mechanical Design, Spring 2020
+                        <br>Control Engineering Fundamentals, Fall 2020
+                    </td>
+                </tr>
+
+               <tr>
+                    <td width="10%">
+                        <div class="one">
+                            <div class="two"><img src='img/cheer.jpg' width="145"></div>
+                        </div>
+                    </td>
+                    <td valign="top" width="90%">
+                        <strong>July 2020-Dec. 2020 </strong>
+                          <br>
+                        <strong>Shanghai Cheer Electromechanical Technology Co., Ltd</strong>
+                         <br>                        
+                         <strong>Intern, Research & Development Department </strong>
+                         <p></p>
+                        <br>Participated in the development and regular maintenance of the device cloud monitoring platform.
+                        <br>Responsible for the setting up and algorithm research of the automatic driving platform of the vibration rolling cluster, including the design of the cluster control algorithm, the programming of the upper computer interface, the setting up of the laser radar and GPS sensing system platform, the design of the multi-sensor point cloud fusion algorithm, and the construction and testing of the communication network.
+                        <br>Contributed to the automatic copper pipe production line project, mainly involved in the design of the copper pipe automatic pipe bender system, the development of the copper pipe sorting system and the function of defect detection.
+                    </td>
+                </tr>
+            </table>
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                <tr>
+                    <td width="100%" valign="middle">
+                        <heading>Publication</heading>
+                    </td>
+                </tr>
+            </table>
+
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+                <tr>
+                    <td width="25%">
+                        <div class="one">
+                            <div class="two"><img src='img/active.jpg' width=170></div>
+                        </div>
+                    </td>
+                    <td valign="top" width="75%">
+                        <papertitle>Deep Convolutional Generative Adversarial Active learning(under review)</papertitle>
+                        <br>
+                        <strong>Zeyu Duan</strong>,
+                        Guangjun Liu,
+                        Sihang Li,
+                        <br>
+                        <em>Neurocomputing
+                        <p></p>
+                        <p>This paper proposes an active learning method based on generative network, which has excellent results in sample generation and classification. Especially for the detection of metal defects in small samples for industrial use, a rapid detection technology based on active learning is proposed. </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td width="25%">
+                        <div class="one">
+                            <div class="two"><img src='img/CFRP.jpg' width="170"></div>
+                        </div>
+                    </td>
+                    <td valign="top" width="75%">
+                        <papertitle>Study on cutting force performance and cutting mechanism of Carbon Fiber Reinforced Polymer (CFRP) composites</papertitle>
+                        <br>
+                        <strong>Zeyu Duan</strong>,
+                        Guangjun LIU,
+                        Xiangdong Fan,
+                        Tao Chen
+                        <br>
+                        <em>Journal of Advanced Mechanical Design, Systems, and Manufacturing
+                        <br>
+                        <p></p>
+                        <p>In this work, based on the failure mechanism of CFRP materials, we studied the cutting mechanism of the cutters in milling processing, modeled and analyzed the milling cutters and processing materials, and conducted orthogonal milling experiments of CFRP composite materials. Based on the experimental data, the influence of different machining parameters on the cutting force was studied, and the relationship between the influence of different cutting methods on the cutting stress and cutting heat on the life of the milling tool was obtained. . </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td width="25%">
+                        <div class="one">
+                            <div class="two"><img src='img/CIK.jpg' width="170"></div>
+                        </div>
+                    </td>
+                    <td valign="top" width="75%">
+                        <papertitle><a https://ieeexplore.ieee.org/document/9421912/authors#authors>Development and experimental study on transfusion device</a></papertitle>
+                        <br>
+                        <strong>Zeyu Duan</strong>,
+                        Guangjun Liu,
+                        Fang Wang,
+                        Chuanxing Sun
+                        <br>
+                        <em> International Conference on Mechanical, Control and Computer Engineering (ICMCCE), 2020
+                        <br>
+                        <p></p>
+                        <p>Treatment of CIK cells in cancer In order to solve the deposition problem, pendulum devices need to be studied. This paper proposes a portable liquid medicine shaker and heat preservation device, and studies the activity of CIK cells in an experimental environment.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td width="25%">
+                        <div class="one">
+                            <div class="two"><img src='img/patent3.jpg' width="150"></div>
+                        </div>
+                    </td>
+                    <td valign="top" width="75%">
+                        <papertitle>Swing type medicament shaking device</papertitle>
+                        <br>
+                        <strong>Zeyu Duan</strong>,
+                        Guangjun Liu,
+                        Fang Wang,
+                        Chuanxing Sun
+                        <br>
+                        <em>Chinese Patent
+                        <br>CN 207970773U
+                        <p></p>
+                        <p>The present invention provides a convenient device for maintaining the activity of the drug by shaking and shaking the drug solution at all times in the process of cultivating, storing and transporting the drug with deposition characteristics.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td width="25%">
+                        <div class="one">
+                            <div class="two"><img src='img/patent2.png' width="150"></div>
+                        </div>
+                    </td>
+                    <td valign="top" width="75%">
+                        <papertitle>Nitrogen spring lifting mechanism with one-way locking function</papertitle>
+                        <br>
+                        Wanghui Bu (Advisor),
+                        Jiahao Wen,
+                        <strong>Zeyu Duan</strong>,
+                        Mingyi Ding,
+                        Liming Zhang,
+                        Shengya Guo
+                        <br>
+                        <em>Chinese Patent
+                        <br>CN 210065063U
+                        <p></p>
+                        <p>The invention relates to a nitrogen spring lifting mechanism with a one-way locking function. Compared with the prior art, the utility model solves the lifting and limit locking functions of the mechanism with a simpler pure mechanical structure.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="25%">
+                        <div class="one">
+                            <div class="two"><img src='img/patent.png' width="150"></div>
+                        </div>
+                    </td>
+                    <td valign="top" width="75%">
+                        <papertitle>Double-layer rotating bicycle parking garage</papertitle>
+                        <br>
+                        Wanghui Bu (Advisor),
+                        Liming Zhang,
+                        <strong>Zeyu Duan</strong>,
+                        Mingyi Ding,
+                        Jiahao Wen,
+                        Shengya Guo
+                        <br>
+                        <em>Chinese Patent
+                        <br>CN 109629863B
+                        <p></p>
+                        <p>In this work,  The invention relates to a double-deck rotating bicycle parking garage. Compared with the prior art, the invention can not only improve the utilization rate of bicycle parking space, but also improve the parking safety of bicycles.</p>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                <tr>
+                    <td width="100%" valign="middle">
+                        <heading>Awards</heading>
+                    </td>
+                </tr>
+            </table>
+                <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+                    <tr>
+                        <td style="padding:20px;width:25%;vertical-align:middle">
+                        </td>
+                        <td width="75%" valign="center">
+                            <br />
+                            1st prize of "Challenge Cup" National Undergraduate Curricular Academic Sci. & Tech Works Competition, May 2019
+                            </p>
+                            <br />
+                            1st prize of the 6th National "TRIZ Cup" Undergraduate Innovative Methods Competition, May 2018
+                            </p>
+                            <br />
+                            1st prize of Shanghai Undergraduate Mechanical Engineering Innovation Competition, May 2018  
+                            </p>
+                            <br />
+                            Outstanding Undergraduate Thesis ,Tongji University, July 2019
+                            </p>
+                            <br />National Undergraduate Innovation and Entrepreneurship Program, May 2018
+                        </td>
+                    </tr>        
+                </tbody></table>
+
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                <tr>
+                    <td>
+                        <br>
+                        <p align="right">
+                            <font size="2">
+                                Website template by <a href="https://jonbarron.info">Jon Barron</a>.
+                            </font>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+</table>
+</body>
+</html>
